@@ -1,0 +1,16 @@
+<Alloy>
+	<Window class="container vgroup" opacity="0.0" title="Notes">
+		<ActionBar platfor="android" displayHomeAsUp="true" onHomeIconItemSelected="onSaveBtnClick" />
+
+		<ScrollView id="contactInfo" class='vgroup top'>
+			<View class="vgroup top size">
+					
+					<TextField id="noteSubject" class='span-width subject' ></TextField>
+					<TextArea id="noteDetail" class='span-width notedetail'></TextArea>
+					
+					<Button id="savetonotes" class="h4 span-width top-buffer" textid="bookmarkBtn" onClick="onSaveBtnClick">Save</Button>
+					<Button id="savetonotes" class="h4 span-width top-buffer" textid="bookmarkBtn" onClick="onDeleteBtnClick">Delete</Button>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

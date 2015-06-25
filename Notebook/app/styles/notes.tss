@@ -1,0 +1,32 @@
+
+".container":{
+	backgroundColor: "#fff",
+	theme: "Appcelerator"
+},
+
+'.separator':{
+	top:25,
+	height: 1,
+	width: "90%",
+	backgroundColor:"#acacac"
+},
+'.subject':{
+	borderWidth: 2,
+  	borderColor: '#bbb',
+  	borderRadius: 5,
+  	color: '#000',
+  	font: {fontSize:20},
+  	hintText:'I am Subject of Notes',
+  	textAlign:'center',
+  	top:10
+},
+'.notedetail':{
+	borderWidth: 2,
+  	borderColor: '#bbb',
+  	borderRadius: 5,
+  	color: '#000',
+  	font: {fontSize:18},
+  	textAlign: 'left',
+  	hintText:'I am notes detail area',
+  	top: 60,
+ }

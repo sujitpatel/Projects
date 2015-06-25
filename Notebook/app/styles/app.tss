@@ -1,0 +1,123 @@
+/*
+
+This is your global styles file. Selectors and rules you define
+here will be applied throughout your app. However, these rules
+have the lowest priority of any style settings.
+
+For more information, see the "Style Priorities" section of
+http://docs.appcelerator.com/titanium/latest/#!/guide/Alloy_Styles_and_Themes
+
+For example, the following would apply to all labels, windows,
+and text fields (depending on platform) in your app unless you
+overrode the settings with other TSS, XML, or JS settings:
+
+'Label[platform=android]': {
+	color: '#000' // all platforms except Android default to black
+}
+
+'Window': {
+	backgroundColor: '#fff' // white background instead of default transparent
+}
+
+'TextField[platform=android]': {
+	height: Ti.UI.SIZE //
+}
+
+*/
+'Window': {
+    backgroundColor: '#fff', // white background instead of default transparent
+    titleAttributes:  {
+        color: "#C41230"
+   	},
+   	modal: false, // make android windows all heavyweight
+    navBarHidden: true,
+    fullscreen: true
+},
+
+'TextAreia': {
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED // common default style
+},
+".buffer":{
+	top: 10,
+	left: 10,
+	right: 10,
+	bottom: 10
+},
+".fill":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+},
+
+".span-width":{
+	width: "100%",
+	height: Ti.UI.SIZE
+},
+
+".span-height":{
+	height: "100%",
+	width: Ti.UI.SIZE
+},
+".h3":{
+	font:{
+		fontSize: 24
+	}
+},
+
+".h4":{
+	font:{
+		fontSize: 18
+	}
+},
+
+".red":{
+	color: '#C41230'
+}
+
+".top-buffer":{
+	top: 10
+},
+
+".left-buffer":{
+	left: 10
+},
+
+".right-buffer":{
+	right: 10
+},
+
+".bottom-buffer":{
+	bottom: 10
+}, 
+
+".vgroup":{
+	layout: 'vertical',
+	left:5
+},
+".hgroup":{
+	layout: 'horizontal'
+},
+".icon":{
+	font:{
+		fontFamily: 'icomoon', 
+		fontSize: 20 
+	}
+},
+".border-light-thin":{
+	border: 2,
+	borderColor:"#ececec",
+},
+".border-dark-thin":{
+	border: 2,
+	borderColor:"#666",
+},
+".gray-line":{
+	backgroundColor: "#ececec",
+	width: Ti.UI.FILL,
+	height: 1,
+	bottom:0	
+},
+
+".size":{
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}

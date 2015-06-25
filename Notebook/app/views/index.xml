@@ -1,0 +1,25 @@
+<Alloy>
+	<Window class="container vgroup">
+		
+		<View platform="android" class="size hgroup">
+			<Label class="icon icon-search left-buffer" />
+			<TextField id="searchBar" class="search" onChange="onSearchChange" />
+			<Label id="closeBtn" class="icon-close right-buffer" onClick="onSearchCancel" />
+			<Button id="addNotes" onClick="onAddNotes">+</Button>
+		</View>
+		<View class="gray-line bottom"/>
+		<ListView id="listView" defaultItemTemplate="userTemplate" onItemclick="onItemClick">
+			<Templates>
+				<!-- UserTemplate - this is the default ListItem template -->
+				<ItemTemplate id="userTemplate" name="userTemplate" class="template">
+					<View class="vgroup left size">
+						<Label id="noteName" bindId="noteName" class="title" />
+						<Label id="noteDate" bindId="noteDate" class="subtitle" />
+					</View>
+					<View class="gray-line bottom"/>
+				</ItemTemplate>
+			</Templates>
+			<ListSection/>
+		</ListView>
+	</Window>
+</Alloy>
